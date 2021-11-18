@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--Verylightgray);
+}
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray: hsl(0, 0%, 95%);
+}
+
+.card__text {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  color: var(--Verylightgray);
+}
+.card {
+  display: flex;
+  /* margin-left: 23rem; */
+  margin: 0 auto;
+  width: 50rem;
+  height: 25rem;
+  border: 1px solid white;
+  margin-top: 10rem;
+  border-radius: 7px;
+}
+.card:hover {
+  box-shadow: 1px white;
+}
+.card__one {
+  background-color: var(--Brightorange);
+  border-radius: 7px 0 0 7px;
+}
+.card__two {
+  background-color: var(--Darkcyan);
+}
+.card__three {
+  background-color: var(--Verydarkcyan);
+  border-radius: 0 7px 7px 0;
+}
+.card__box {
+  width: 17rem;
+}
+.card__paragraph {
+  margin-left: 2rem;
+  color: var(--Transparentwhite);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.card__btn {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 10rem;
+  width: 6rem;
+  height: 2rem;
+  color: var(--Transparentwhite);
+  border: 1px solid var(--Transparentwhite);
+  cursor: pointer;
+}
+
+.card__one .card__btn {
+  background-color: var(--Brightorange);
+}
+.card__one .card__btn:hover {
+  background-color: var(--Transparentwhite);
+  color: var(--Brightorange);
+}
+.card__two .card__btn {
+  background-color: var(--Darkcyan);
+}
+.card__two .card__btn:hover {
+  background-color: var(--Transparentwhite);
+  color: var(--Darkcyan);
+}
+.card__three .card__btn {
+  background-color: var(--Verydarkcyan);
+}
+.card__three .card__btn:hover {
+  background-color: var(--Transparentwhite);
+  color: var(--Verydarkcyan);
+}
+.card__icon {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    display: inline;
+  }
+  .container {
+    margin-left: 6rem;
+  }
+  .card__box {
+    height: 20rem;
+  }
+  .card__text {
+    margin-top: 1rem;
+  }
+  .card__btn {
+    margin-top: 2rem;
+  }
+  .card__paragraph {
+    line-height: 1rem;
+  }
+  .card__one {
+    border-radius: 7px 7px 0 0;
+  }
+  .card__three {
+    border-radius: 0 0 7px 7px;
+  }
+}
